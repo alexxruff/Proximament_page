@@ -126,6 +126,13 @@ body {
 	margin: 0;
 	font-size: 20px;
 	font-size: 2rem;
+
+
+	-webkit-animation: oscilar 3s 2s infinite ease-in-out;
+	-moz-animation:	   oscilar 3s 2s infinite ease-in-out;
+	-o-animation: 	   oscilar 3s 2s infinite ease-in-out;
+	animation: 		   oscilar 3s 2s infinite ease-in-out; 
+/* Propiedad animation: nombreAnimacion duracionAnimacion tiempoEsperaEntreAnimacion n°VecesREpetida tipodeefecto(Aceleracionentradaysalida)*/
 }
 
 #flecha {
@@ -134,6 +141,30 @@ body {
 
 	text-decoration: none;
 }
+
+@-webkit-keyframes oscilar {
+	0%, 16%, 32%, 100% { margin-bottom: 0; }
+	8%, 24% { margin-bottom: 15px; }
+	/*Parametro para la animacion de la flecha medido el tiempo en %*/
+}
+
+@-moz-keyframes oscilar {
+	0%, 20%, 40%, 100% { margin-bottom: 0; }
+	10%, 30% { margin-bottom: 15px; }
+	
+}
+
+@-o-keyframes oscilar {
+	0%, 20%, 40%, 100% { margin-bottom: 0; }
+	10%, 30% { margin-bottom: 15px; }
+	
+}
+
+@keyframe oscilar {
+	0%, 20%, 40%, 100% { margin-bottom: 0; }
+	10%, 30% { margin-bottom: 15px; }
+}
+
 
 /* ****************************************** */
 /* ***************Suscripcion**************** */
