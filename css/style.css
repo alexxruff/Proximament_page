@@ -134,3 +134,51 @@ body {
 
 	text-decoration: none;
 }
+
+/* ****************************************** */
+/* ***************Suscripcion**************** */
+label {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+
+	font-size: 24px;
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+#mc_embed_signup {
+	width: 90%;
+	margin: 0 auto; /* para que quede centrado en horizontal*/
+	text-align: center;
+}
+
+#mce-EMAIL, #mc-embedded-subscribe {
+	display: block; /* para que en la version movil vaya uno sobre otro*/
+	padding: 10px;
+
+	width: 80%;
+	border: 0;
+	margin: 0 auto;
+
+	color: #fff;
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: 200;
+}
+
+#mce-EMAIL {
+	margin-bottom: 10px;
+	text-align: center;
+
+	background-color: #0A2A35;
+}
+
+#mc-embedded-subscribe {
+	padding: 10px 20px;
+
+	background-color: #0085B2;
+}
+
+
+
