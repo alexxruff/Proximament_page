@@ -1,0 +1,63 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	color: #fff;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	position: relative;
+	font-size: 14px;
+	font-size: 1.4rem;
+
+	background-color: #004C66;
+}
+
+/*.centrado{
+	position: relative;
+	top: 50%;
+
+	-webkit-transform: traslateY(-);
+}*/
+
+#contenedor {
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	/*Estos 3 hacen que mi seccion ocupe el total de la pagina*/
+
+	width: 100%;
+}
+
+#reclamo, #suscripcion {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	min-height: 100%;
+	/*Este me sirve para la compatibilidad de algunos navegadores decir que su altura minima es de 100%*/
+}
+
+#reclamo {
+	top: 0;
+	/*Este hace que uno vaya despues de el otro al ocupar los 2 el 100%*/
+	border: 1px solid #fc0;
+}
+
+#suscripcion {
+	top: 100%;
+}
