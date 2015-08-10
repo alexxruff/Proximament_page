@@ -60,7 +60,13 @@
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c8648ad166bae3" async="async"></script>
 	<script>
 		$(document).ready(function(){
+			$('.addthis_sharing_toolbox').on('mouseenter', function(e){
+				$('#agradecimiento').addClass('show-yuo');
+			});
 
+			$('.addthis_sharing_toolbox').on('mouseleave', function(e){
+				$('#agradecimiento').removeClass('show-yuo');
+			});
 		});
 	</script>
 

@@ -194,5 +194,14 @@ label {
 
 #agradecimiento {
 	opacity: 0;
+
+	/* Agrega el efecto de transicion y se da soporte a varios navegadores*/
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+	transition: all 2s;
 }
 
+#agradecimiento.show-you {
+	opacity: 1;
+}
