@@ -27,12 +27,18 @@ body {
 	background-color: #004C66;
 }
 
-/*.centrado{
+.centrado{
 	position: relative;
 	top: 50%;
 
-	-webkit-transform: traslateY(-);
-}*/
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform:translateY(-50%);
+	/*Con esto centramos en compatibilidad con navegadores*/
+
+}
 
 #contenedor {
 
@@ -61,4 +67,70 @@ body {
 
 #suscripcion {
 	top: 100%;
+}
+
+/* ********************************************** */
+/* **************logotipo************************ */
+#logo {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#logo > img {
+	width: 30%;
+	max-width: 150px;
+	height: auto;
+	margin: 0;
+}
+
+/* *********************************************** */
+/* *******************reclamo********************* */
+#reclamo > section {
+	position: absolute;
+	left: 0;
+	right: 0;
+
+	width: 70%;
+	margin: 0 auto;
+}
+
+.frase{
+	font-size: 60px;
+	font-size: 6rem;
+	text-align: center;
+}
+
+#frase-1 {
+	opacity: 1;
+}
+
+#frase-2 {
+	opacity: 0;
+}
+
+#frase-3 {
+	opacity: 0;
+}
+
+/* *************************************** */
+/* ******* Cierre mas informacion ******** */
+#mas-info{
+	position: absolute;
+	bottom: 1%;
+	width: 100%;
+
+	text-align: center;
+}
+
+#mas-info > p{
+	margin: 0;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+#flecha {
+	font-size: 50px;
+	font-size: 5rem;
+
+	text-decoration: none;
 }
