@@ -3,13 +3,14 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 	font-weight: 200;
 	color: #fff;
 }
 
 html {
 	font-size: 62.5%;
+	/*Se coloca al 62% para que la equivalencia entre px y rem sea igal y no afecte en dispositivos moviles*/
 }
 
 html, body {
